@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Side Bar Example</title>
+<style>
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e9e6e6;
+  padding-top: 20px;
+}
+
+/* Style links inside the sidebar */
+.sidebar div {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black !important;
+  cursor: pointer;
+}
+
+/* Style for the hr */
+hr {
+  border: 0;
+  border-top: 1px solid #888;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Content container */
+.content {
+  margin-left: 250px; /* Adjust this value to set the margin */
+}
+
+/* Style for the main content */
+.main-content {
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 1245px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+}
+
+.mc {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ep {
+  margin-top: 10px;
+  padding-left: 50px;
+}
+
+.ep span {
+  color: green;
+  padding-left: 50px;
+}
+
+.prof {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.button-container {
+  display: contents;
+  flex-direction: row;
+  margin-left: auto;
+  padding-right: 100px; /* Push the button to the right */
+}
+
+.button {
+  background-color:whitesmoke;
+  border-color: gray;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 8px;
+  
+}
+
+.ins-img{
+  height: 10px;
+  width:10px;
+  padding-right: 3px;
+}
+
+.new-button{
+  margin-left: 18px;
+}
+
+.bus-bg {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.bus {
+  padding: 30px 30px; 
+  border-radius: 10px;
+
+}
+.bus{
+  width:400px; 
+  height:200px;
+  border: 1px solid gray;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  
+}
+.bot{
+margin-top:30px;
+  margin-left: 50px;
+
+  width: 300px; /* Adjust width as needed */
+  height:430px;
+  background-color: #f0f0f0; /* Background color of the box */
+  border-radius: 10px; /* Border radius for rounded corners */
+  text-align: center; /* Center text horizontally */
+  line-height: 150px
+}
+.not{
+  
+}
+
+.box ,.blast,.not{
+  margin-left: 30px;
+  width: 400px; /* Adjust width as needed */
+  height:200px;
+  background-color: #f0f0f0; /* Background color of the box */
+  border-radius: 10px; /* Border radius for rounded corners */
+  text-align: center; /* Center text horizontally */
+  line-height: 150px; /* Center text vertically */
+}
+  
+/* Responsive design */
+@media screen and (max-height: 450px) {
+  .sidebar div {font-size: 16px;}
+}
+
+.ok{
+  margin-left: 750px;
+}
+.var{
+  display: flex;
+  flex-direction: row;
+}
+.blast{
+  margin-top: 30px;
+}
+.not{
+  margin-top: 30px;
+}
+.other{
+  width:1210px;
+  height:40px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: #ccc7c7;
+  
+}
+th,td{
+  padding: 8px;
+  text-align:center;
+  border-bottom: 1px solid #ddd;
+}
+th{
+  height: 30px;
+  background-color: #e9e6e6;
+}
+table {
+
+  border-collapse: collapse;
+  width: 100%;
+}
+td{
+  height: 30px;
+}
+.me{
+  padding-top: 10px;
+  padding-left: 50px;
+}
+.will{
+  padding-left: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="Dashboard">Dashboard</div>
+  <div class="Analytics">Analytics</div>
+  <div class="Messages">Messages</div>
+  <div class="Collections">Collections</div>
+  <div class="Users">Users</div>
+  <hr>
+  <div class="Settings">Settings</div>
+  <div class="Notifications">Notifications</div>
+</div>
+
+<div class="content">
+  <div class="main-content">
+    <img class="prof" src="photo-1535713875002-d1d0cf377fde.avif" alt="">
+    <div>
+      <div class="marie"><h1 class="mc">Marie Claire</h1></div>
+      <div class="ep">Edit profile <span>verified</span></div>
+    </div>
+    <div class="button-container">
+      <div class="ok"><button class="button"><img class="ins-img" src="360_F_233001388_nAEcam8u6ksmkcK85KnMC58X7G6glftP.jpg" alt="">insights</button></div>
+      <div class="new-button"><button class="button">+ new post</button></div>
+    </div>
+  </div>
+  <div class="var">
+  <div class="bus-bg">
+   <div class="bus"></div>
+   <div class="box"> </div>
+  </div>
+  <div class="clg">
+    <div class="blast"></div>
+    <div class="not"></div>
+  </div>
+  <div>
+    <div class="bot"></div>
+  </div>
+</div>
+<div class="other">
+  <h4 class="me">Others</h4>
+</div>
+<div>
+  <table class="will" >
+    <tr>
+        <th>INVOICE</th>
+        <th>DATE</th>
+        <th>AMOUNT</th>
+        <th>PAYMENT METHOD</th>
+        <th>HEADER</th>  
+        <th>HEADER</th>  
+    </tr>
+    <tr>
+      <td>INVOICE A/10</td>
+      <td>MAR 15,2020</td>
+      <td>$143,00</td>
+      <td><img style="height:10px"src="download.png">****4231</td>
+      <td><button>paid</button></td>
+      <td><img src="Vector.png" alt=""></td>
+    </tr>
+    <tr>
+      <td>INVOICE A/10</td>
+      <td>MAR 15,2020</td>
+      <td>$143,00</td>
+      <td><img style="height:10px"src="download.png">****4231</td>
+      <td><button>paid</button></td>
+      <td><img src="Vector.png" alt=""></td>
+    </tr>
+    <tr>
+      <td>INVOICE A/10</td>
+      <td>MAR 15,2020</td>
+      <td>$143,00</td>
+      <td><img style="height:10px"src="download.png">****4231</td>
+      <td><button>paid</button></td>
+      <td><img src="Vector.png" alt=""></td>
+    </tr>
+    <tr>
+      <td>INVOICE A/10</td>
+      <td>MAR 15,2020</td>
+      <td>$143,00</td>
+      <td><img style="height:10px"src="download.png">****4231</td>
+      <td><button>paid</button></td>
+      <td><img src="Vector.png" alt=""></td>
+    </tr>
+    <tr>
+      <td>INVOICE A/10</td>
+      <td>MAR 15,2020</td>
+      <td>$143,00</td>
+      <td><img style="height:10px"src="download.png">****4231</td>
+      <td><button>paid</button></td>
+      <td><img src="Vector.png" alt=""></td>
+    </tr>
+    <tr>
+      <td>INVOICE A/10</td>
+      <td>MAR 15,2020</td>
+      <td>$143,00</td>
+      <td><img style="height:10px"src="download.png">****4231</td>
+      <td><button>paid</button></td>
+      <td><img src="Vector.png" alt=""></td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>
